@@ -1,16 +1,16 @@
 {
-  "name": "Your Project",
-  "audience": "Not chosen yet",
-  "archetype": "Not chosen yet",
-  "promise": "Not chosen yet",
-  "headline": "A small idea. A real application.",
-  "summary": "This working page is your starting point. Give it a purpose and a brand, then build accounts and permissions one feature at a time.",
-  "voice": ["Not chosen yet"],
-  "design_direction": "Not chosen yet",
+  "name": "Student Assistant",
+  "audience": "Students juggling classes and work who need a clear starting point.",
+  "archetype": "Sage: a helpful guide that makes the next step clear.",
+  "promise": "A clearer next step for your school day.",
+  "headline": "A clearer next step for your school day.",
+  "summary": "Between classes, shifts, and everything else, start with a little clarity. Find a simple approach to your day and focus on what comes next.",
+  "voice": ["Professional", "Clear", "Supportive"],
+  "design_direction": "Navy and white, clear navigation, generous spacing, and an original book/checkmark logo.",
   "palette": {
-    "ink": "#182C34",
-    "paper": "#F6F5EF",
-    "accent": "#285A50",
+    "ink": "#14263D",
+    "paper": "#F5F7FB",
+    "accent": "#2457C5",
     "surface": "#FFFFFF"
   }
 }

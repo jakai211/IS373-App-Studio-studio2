@@ -1,0 +1,25 @@
+/* Student Assistant: shared professional brand details. */
+.site-header { padding-block: 24px; }
+.hero { padding-block: 76px 68px; max-width: 900px; }
+h1 { font-size: clamp(2.7rem, 6vw, 5.3rem); max-width: 16ch; }
+.lede { font-size: 1.15rem; max-width: 53ch; }
+.hero-note { font-size: .8rem; color: #526176; margin-top: 22px; }
+.button { border-radius: 6px; }
+.button:hover { background: var(--ink); }
+nav a:hover, .text-link:hover { text-decoration: underline; }
+.two-column { padding-block: 48px; }
+.two-column h2 { font-size: clamp(1.9rem, 3vw, 2.5rem); }
+.muted { opacity: 1; color: #526176; }
+.panel { border-top: 4px solid var(--accent); padding: 36px; }
+.panel h2 { max-width: 24ch; }
+.panel p { max-width: 65ch; }
+section[id] { scroll-margin-top: 28px; }
+@media (max-width: 650px) {
+  .hero { padding-block: 44px; }
+  .wordmark { font-size: 1rem; }
+  .panel { padding: 24px; }
+  nav { font-size: .85rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

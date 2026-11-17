@@ -11,6 +11,7 @@
   <link rel="icon" type="image/svg+xml" href="/static/logo.svg">
   <link rel="stylesheet" href="/brand.css">
   <link rel="stylesheet" href="/static/site.css">
+  <link rel="stylesheet" href="/static/student.css">
   {% if request.app.state.live_reload %}<script src="/static/live.js" defer></script>{% endif %}
 </head>
 <body>
@@ -18,7 +19,7 @@
   <header class="site-header wrap">
     <a class="wordmark" href="/" aria-label="{{ brand.name }} home"><img src="/static/logo.svg" alt="" width="36" height="36">{{ brand.name }}</a>
     <nav aria-label="Main navigation">
-      <a href="/#idea">The idea</a>
+      <a href="/#idea">Starting guide</a>
       {% if features.accounts %}
         <a href="/dashboard">Member space</a>
         {% if not current_user %}<a href="/login">Log in</a>{% endif %}
@@ -27,6 +28,6 @@
     </nav>
   </header>
   <main id="main" class="wrap" tabindex="-1">{% block content %}{% endblock %}</main>
-  <footer class="site-footer wrap"><span>{{ brand.name }}</span><span>A small project, built thoughtfully.</span></footer>
+  <footer class="site-footer wrap"><span>{{ brand.name }}</span><span>A little clarity for your next step.</span></footer>
 </body>
 </html>
