@@ -1,4 +1,8 @@
 /* Student Assistant: shared professional brand details. */
+.form-stack h1, .member-panel h1 { font-size: clamp(2rem, 5vw, 3rem); }
+.field-help { font-size: .85rem; margin-top: 8px; color: #526176; }
+.form-stack [role="alert"] { border-left: 3px solid currentColor; padding-left: 12px; }
+.member-panel { margin-top: 48px; }
 .site-header { padding-block: 24px; }
 .hero { padding-block: 76px 68px; max-width: 900px; }
 h1 { font-size: clamp(2.7rem, 6vw, 5.3rem); max-width: 16ch; }
