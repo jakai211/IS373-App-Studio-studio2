@@ -6,9 +6,9 @@ actual evidence; pending is a valid state. Keep explanations/help in
 
 ## Current stage
 
-- **Current feature:** APP-001.
-- **Status:** APP-001 full cumulative checks passed in Linux and Windows CI; learner chose keep. PR merge pending.
-- **Next step:** Verify declared-stage CI, then review PR #2 for merge.
+- **Current feature:** APP-002.
+- **Status:** APP-001 merged. APP-002 implemented locally; learner trial, review and GitHub evidence pending.
+- **Next step:** Record the learner account-flow trial and reviewed reflection; create the APP-002 issue/PR after GitHub sign-in, then verify full CI before merge.
 - **Implementation marker:** `studio.json` declares `implemented_through: 1` after full cumulative CI passed.
 
 This repository owns application code. Server/proxy changes and production
@@ -41,9 +41,9 @@ helpers; keep data local. New accounts cannot choose their role.
 
 | Decision | Agreement |
 |---|---|
-| Expected public/private behavior and account flow | Pending |
-| Valid and rejected cases to demonstrate | Pending |
-| Own issue / branch / PR | Pending |
+| Expected public/private behavior and account flow | Anonymous dashboard visits redirect to login. Successful login opens a private dashboard saying “Welcome, [username]” with a logout button. Logout removes access until login again. |
+| Valid and rejected cases to demonstrate | Successful signup/login; wrong password shows an error and leaves the visitor logged out; dashboard access after logout requires login. |
+| Own issue / branch / PR | [Issue #3](https://github.com/jakai211/IS373-App-Studio-studio2/issues/3) / `app-002-accounts` / PR pending. |
 
 **Keep when:** the agreed forms/API work; duplicate/invalid signup and wrong
 credentials are rejected; passwords are hashed; authentication uses validated,
@@ -81,8 +81,8 @@ customer research or claims that a timestamp proves learning.
 
 | Feature | Files / own issue / PR | Actual checks and learner observations | Kept / GitHub state |
 |---|---|---|---|
-| APP-001 | [Brand](app/brand.json), [homepage](app/templates/home.html), [shared layout](app/templates/base.html), [styles](app/static/student.css), [logo](app/static/logo.svg); [issue #1](https://github.com/jakai211/IS373-App-Studio-studio2/issues/1) | November 17: Black and Pylint passed; foundation 95 passed, 2 skipped, 1 Windows symlink-permission failure; APP-001 contracts 2 passed; Chromium 2 passed. AI reviewed desktop and 390px layout. Learner observation, interpretation, keep reason and publication approval recorded in LEARNING.md. Full local check failed; no pass claimed. | Learner chose keep; [APP-001 Linux and Windows CI passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44142077646). Declared-stage checks and merge tracked in [PR #2](https://github.com/jakai211/IS373-App-Studio-studio2/pull/2). |
-| APP-002 | Pending | Unfinished; explicit contracts not yet passed | Pending |
+| APP-001 | [Brand](app/brand.json), [homepage](app/templates/home.html), [shared layout](app/templates/base.html), [styles](app/static/student.css), [logo](app/static/logo.svg); [issue #1](https://github.com/jakai211/IS373-App-Studio-studio2/issues/1) | November 17: Black and Pylint passed; foundation 95 passed, 2 skipped, 1 Windows symlink-permission failure; APP-001 contracts 2 passed; Chromium 2 passed. AI reviewed desktop and 390px layout. Learner observation, interpretation, keep reason and publication approval recorded in LEARNING.md. Full local check failed; no pass claimed. | Learner chose keep; [APP-001 Linux and Windows CI passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44142077646). [Final main Linux and Windows checks passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44573659283); merged, issue closed. See [PR #2](https://github.com/jakai211/IS373-App-Studio-studio2/pull/2). |
+| APP-002 | [Routes](app/features/accounts.py), [account form](app/templates/account.html), [dashboard](app/templates/dashboard.html), [additional checks](tests/test_account_routes.py); issue/PR pending | November 19: Black and Pylint passed; foundation 95 passed, 2 skipped, 1 Windows symlink-permission failure; cumulative APP-001/002 contracts 14 passed; Chromium journeys 2 passed; additional route checks 3 passed separately. Full local run failed due to the symlink privilege error. AI browser trial: signup led to login, successful login showed personalized dashboard, logout followed by dashboard revisit redirected to login. Learner reported an incorrect-password error, confirmed dashboard/login redirects and chose keep for convenience; approved summary in LEARNING.md. | Local implementation only; learner keep/review approved; full CI pending. |
 | APP-003 | Pending | Unfinished; explicit contracts not yet passed | Pending |
 
 The instructor's reference branches show possible implementations. They do not
