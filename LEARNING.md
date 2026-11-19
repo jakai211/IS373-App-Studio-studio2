@@ -25,14 +25,14 @@ Accuracy approval is not proof of understanding. Label simulated trials explicit
 - Keep decision: The learner would not change the flow because "its convient" (convenient).
 - Review: On November 19 the learner approved the observation, interpretation, keep reason and AI-help summary for publication.
 - Help/gaps: AI implemented the account routes and forms using the prepared security helpers, ran automated checks and a separate AI browser trial. The full local run encountered a Windows symbolic-link privilege failure; feature checks passed. Learner observations, interpretation and keep reason were supplied; the learner approved the summary for publication.
-- Evidence links / next step: See SPEC.md for actual local evidence. [Issue #3](https://github.com/jakai211/IS373-App-Studio-studio2/issues/3) is open. [PR #4](https://github.com/jakai211/IS373-App-Studio-studio2/pull/4); full APP-002 CI passed. Final declared-stage checks and merge pending.
+- Evidence links / next step: See SPEC.md for actual local evidence. [Issue #3](https://github.com/jakai211/IS373-App-Studio-studio2/issues/3) is open. [PR #4](https://github.com/jakai211/IS373-App-Studio-studio2/pull/4); full APP-002 CI passed. [Final PR checks passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44577958018); PR #4 merged and issue #3 closed.
 
 ## APP-003
 
-- Prediction: Pending.
-- Check interpretation: Pending.
-- Browser observation: Pending.
-- Keep decision: Pending.
-- Review: Pending.
-- Help/gaps: Pending.
-- Evidence links / next step: Keep APP-002 before agreeing this lesson.
+- Prediction: Reviewed paraphrase: a member typing the admin API address should be asked for a password.
+- Check interpretation: Reviewed paraphrase: members should be blocked because they are not admins; knowing a leaked address should not grant access.
+- Browser observation: Pending. The learner has not supplied an actual admin-page observation.
+- Keep decision: The learner chose keep because members are not admins and knowing the address should not grant access.
+- Review: On November 19 the learner approved this summary, including the missing browser observation, and authorized publication and completion.
+- Help/gaps: AI proposed the small permission matrix, which the learner accepted, and explained login versus permission. AI built and tested the boundary with prepared helpers and performed a separate browser trial. The learner supplied an interpretation and keep reason after prompting. The learner browser observation remains pending; the approved summary preserves that gap.
+- Evidence links / next step: [Issue #5](https://github.com/jakai211/IS373-App-Studio-studio2/issues/5). [PR #6](https://github.com/jakai211/IS373-App-Studio-studio2/pull/6); full CI pending.
