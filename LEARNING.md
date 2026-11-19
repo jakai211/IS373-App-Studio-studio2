@@ -19,9 +19,9 @@ Accuracy approval is not proof of understanding. Label simulated trials explicit
 
 ## APP-002
 
-- Prediction / agreed behavior (reviewed paraphrase): Before login, dashboard visits should go to login. Successful login should allow the private dashboard. A wrong password should show an error and leave the visitor logged out. After logout, the dashboard should require login again. The learner chose a simple “Welcome, [username]” dashboard with a logout button.
-- Check interpretation (reviewed paraphrase): If access still worked after logout, other people could get into the private dashboard. Learner wrote, "if they could still get in then others can".
-- Browser observation (reviewed paraphrase): A wrong password showed an incorrect-password error. The learner answered yes when asked whether correct login showed the welcome dashboard and revisiting the dashboard after logout returned to login.
+- Prediction: Reviewed paraphrase of agreed behavior: Before login, dashboard visits should go to login. Successful login should allow the private dashboard. A wrong password should show an error and leave the visitor logged out. After logout, the dashboard should require login again. The learner chose a simple “Welcome, [username]” dashboard with a logout button.
+- Check interpretation: Reviewed paraphrase: If access still worked after logout, other people could get into the private dashboard. Learner wrote, "if they could still get in then others can".
+- Browser observation: Reviewed paraphrase: A wrong password showed an incorrect-password error. The learner answered yes when asked whether correct login showed the welcome dashboard and revisiting the dashboard after logout returned to login.
 - Keep decision: The learner would not change the flow because "its convient" (convenient).
 - Review: On November 19 the learner approved the observation, interpretation, keep reason and AI-help summary for publication.
 - Help/gaps: AI implemented the account routes and forms using the prepared security helpers, ran automated checks and a separate AI browser trial. The full local run encountered a Windows symbolic-link privilege failure; feature checks passed. Learner observations, interpretation and keep reason were supplied; the learner approved the summary for publication.
