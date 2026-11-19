@@ -25,7 +25,7 @@ Accuracy approval is not proof of understanding. Label simulated trials explicit
 - Keep decision: The learner would not change the flow because "its convient" (convenient).
 - Review: On November 19 the learner approved the observation, interpretation, keep reason and AI-help summary for publication.
 - Help/gaps: AI implemented the account routes and forms using the prepared security helpers, ran automated checks and a separate AI browser trial. The full local run encountered a Windows symbolic-link privilege failure; feature checks passed. Learner observations, interpretation and keep reason were supplied; the learner approved the summary for publication.
-- Evidence links / next step: See SPEC.md for actual local evidence. [Issue #3](https://github.com/jakai211/IS373-App-Studio-studio2/issues/3) is open. PR and CI pending.
+- Evidence links / next step: See SPEC.md for actual local evidence. [Issue #3](https://github.com/jakai211/IS373-App-Studio-studio2/issues/3) is open. [PR #4](https://github.com/jakai211/IS373-App-Studio-studio2/pull/4); full APP-002 CI passed. Final declared-stage checks and merge pending.
 
 ## APP-003
 
