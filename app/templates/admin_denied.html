@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Admin access required · {{ brand.name }}{% endblock %}
+{% block content %}
+<section class="panel member-panel" aria-labelledby="denied-title">
+  <p class="eyebrow">Members welcome</p>
+  <h1 id="denied-title">Admin access required</h1>
+  <p>Your account can use the member dashboard. This area is reserved for admins.</p>
+  <a class="button" href="/dashboard">Back to your dashboard</a>
+</section>
+{% endblock %}
