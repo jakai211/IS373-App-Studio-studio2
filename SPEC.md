@@ -7,9 +7,9 @@ actual evidence; pending is a valid state. Keep explanations/help in
 ## Current stage
 
 - **Current feature:** APP-001.
-- **Status:** Neutral foundation; learner scope and decisions pending.
-- **Next step:** Confirm the local clone and SSH origin, run setup and try the page.
-- **Implementation marker:** `studio.json` starts at `implemented_through: 0`.
+- **Status:** APP-001 full cumulative checks passed in Linux and Windows CI; learner chose keep. PR merge pending.
+- **Next step:** Verify declared-stage CI, then review PR #2 for merge.
+- **Implementation marker:** `studio.json` declares `implemented_through: 1` after full cumulative CI passed.
 
 This repository owns application code. Server/proxy changes and production
 deployment are outside these three local-development lessons. Prepared helpers
@@ -23,10 +23,10 @@ Keep account actions honest about their unfinished state.
 
 | Decision | Agreement |
 |---|---|
-| Visitor and concrete use situation | Pending |
-| Reused IS117 brand, or name / promise / primary archetype | Pending |
-| One visible choice and visitor benefit | Pending |
-| Own issue / branch / PR | Pending |
+| Visitor and concrete use situation | Students juggling classes and work who need a clear starting point. |
+| Reused IS117 brand, or name / promise / primary archetype | Student Assistant / A clearer next step for your school day / Sage, expressed as a helpful guide. AI-proposed purpose accepted by the learner. |
+| One visible choice and visitor benefit | Professional navy-and-white style, clear headings and navigation to help busy students find their next step quickly. Visual details delegated to AI. |
+| Own issue / branch / PR | [Issue #1](https://github.com/jakai211/IS373-App-Studio-studio2/issues/1) / `app-001-student-assistant` / [PR #2](https://github.com/jakai211/IS373-App-Studio-studio2/pull/2). |
 
 **Keep when:** the agreed identity is visible and usable at desktop/narrow widths;
 full foundation + APP-001 checks pass; AI review and the learner's actual check
@@ -81,7 +81,7 @@ customer research or claims that a timestamp proves learning.
 
 | Feature | Files / own issue / PR | Actual checks and learner observations | Kept / GitHub state |
 |---|---|---|---|
-| APP-001 | Pending | Not run; learner contributions pending | Pending |
+| APP-001 | [Brand](app/brand.json), [homepage](app/templates/home.html), [shared layout](app/templates/base.html), [styles](app/static/student.css), [logo](app/static/logo.svg); [issue #1](https://github.com/jakai211/IS373-App-Studio-studio2/issues/1) | November 17: Black and Pylint passed; foundation 95 passed, 2 skipped, 1 Windows symlink-permission failure; APP-001 contracts 2 passed; Chromium 2 passed. AI reviewed desktop and 390px layout. Learner observation, interpretation, keep reason and publication approval recorded in LEARNING.md. Full local check failed; no pass claimed. | Learner chose keep; [APP-001 Linux and Windows CI passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44142077646). Declared-stage checks and merge tracked in [PR #2](https://github.com/jakai211/IS373-App-Studio-studio2/pull/2). |
 | APP-002 | Pending | Unfinished; explicit contracts not yet passed | Pending |
 | APP-003 | Pending | Unfinished; explicit contracts not yet passed | Pending |
 
