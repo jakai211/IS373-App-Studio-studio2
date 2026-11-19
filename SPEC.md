@@ -6,9 +6,9 @@ actual evidence; pending is a valid state. Keep explanations/help in
 
 ## Current stage
 
-- **Current feature:** APP-002.
-- **Status:** APP-001 merged. APP-002 full Linux and Windows checks passed; learner chose keep and approved the summary. Final declared-stage CI and merge pending.
-- **Next step:** Verify final declared-stage CI and merge PR #4.
+- **Current feature:** APP-003.
+- **Status:** APP-001 and APP-002 merged. APP-003 implemented locally; final learner evidence and full CI pending.
+- **Next step:** Finish APP-003 learner review and full CI before merge.
 - **Implementation marker:** `studio.json` declares `implemented_through: 2` after full cumulative CI passed.
 
 This repository owns application code. Server/proxy changes and production
@@ -65,9 +65,9 @@ permissions, including for an existing session after a role change.
 
 | Decision | Agreement |
 |---|---|
-| Intended admin-only result | Pending |
-| Actual allowed/denied request evidence | Pending |
-| Own issue / branch / PR | Pending |
+| Intended admin-only result | A simple protected admin page and API: anonymous visitors need login, members are denied, admins are allowed. Scope proposed by AI and approved by learner. Current database roles apply on every request; roles managed only through the prepared local CLI. |
+| Actual allowed/denied request evidence | Prepared contracts: anonymous API 401/page redirect; member API/page 403; admin API/page 200; demotion to member denies the existing session again. All passed locally. |
+| Own issue / branch / PR | [Issue #5](https://github.com/jakai211/IS373-App-Studio-studio2/issues/5) / `app-003-roles` / PR pending. |
 
 **Keep when:** a direct request cannot bypass the role boundary, role changes
 take effect as specified, new signup remains member-only, and full cumulative
@@ -82,8 +82,8 @@ customer research or claims that a timestamp proves learning.
 | Feature | Files / own issue / PR | Actual checks and learner observations | Kept / GitHub state |
 |---|---|---|---|
 | APP-001 | [Brand](app/brand.json), [homepage](app/templates/home.html), [shared layout](app/templates/base.html), [styles](app/static/student.css), [logo](app/static/logo.svg); [issue #1](https://github.com/jakai211/IS373-App-Studio-studio2/issues/1) | November 17: Black and Pylint passed; foundation 95 passed, 2 skipped, 1 Windows symlink-permission failure; APP-001 contracts 2 passed; Chromium 2 passed. AI reviewed desktop and 390px layout. Learner observation, interpretation, keep reason and publication approval recorded in LEARNING.md. Full local check failed; no pass claimed. | Learner chose keep; [APP-001 Linux and Windows CI passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44142077646). [Final main Linux and Windows checks passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44573659283); merged, issue closed. See [PR #2](https://github.com/jakai211/IS373-App-Studio-studio2/pull/2). |
-| APP-002 | [Routes](app/features/accounts.py), [account form](app/templates/account.html), [dashboard](app/templates/dashboard.html), [additional checks](tests/test_account_routes.py); [issue #3](https://github.com/jakai211/IS373-App-Studio-studio2/issues/3), [PR #4](https://github.com/jakai211/IS373-App-Studio-studio2/pull/4) | November 19: Black and Pylint passed; foundation 95 passed, 2 skipped, 1 Windows symlink-permission failure; cumulative APP-001/002 contracts 14 passed; Chromium journeys 2 passed; additional route checks 3 passed separately. Full local run failed due to the symlink privilege error. AI browser trial: signup led to login, successful login showed personalized dashboard, logout followed by dashboard revisit redirected to login. Learner reported an incorrect-password error, confirmed dashboard/login redirects and chose keep for convenience; approved summary in LEARNING.md. | Learner keep/review approved; [full APP-002 Linux and Windows CI passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44577140344). Final declared-stage CI and merge pending. |
-| APP-003 | Pending | Unfinished; explicit contracts not yet passed | Pending |
+| APP-002 | [Routes](app/features/accounts.py), [account form](app/templates/account.html), [dashboard](app/templates/dashboard.html), [additional checks](tests/test_account_routes.py); [issue #3](https://github.com/jakai211/IS373-App-Studio-studio2/issues/3), [PR #4](https://github.com/jakai211/IS373-App-Studio-studio2/pull/4) | November 19: Black and Pylint passed; foundation 95 passed, 2 skipped, 1 Windows symlink-permission failure; cumulative APP-001/002 contracts 14 passed; Chromium journeys 2 passed; additional route checks 3 passed separately. Full local run failed due to the symlink privilege error. AI browser trial: signup led to login, successful login showed personalized dashboard, logout followed by dashboard revisit redirected to login. Learner reported an incorrect-password error, confirmed dashboard/login redirects and chose keep for convenience; approved summary in LEARNING.md. | Learner keep/review approved; [full APP-002 Linux and Windows CI passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44577140344). [Final APP-002 PR checks passed](https://github.com/jakai211/IS373-App-Studio-studio2/actions/runs/44577958018); PR #4 merged and issue #3 closed. |
+| APP-003 | [Routes](app/features/roles.py), [admin page](app/templates/admin.html), [denied page](app/templates/admin_denied.html); [issue #5](https://github.com/jakai211/IS373-App-Studio-studio2/issues/5), PR pending | November 19: Black/Pylint passed; 18 cumulative contracts and 2 Chromium journeys passed. Full local run failed on the Windows symlink privilege check (foundation: 98 passed, 2 skipped, 1 failed). AI browser review confirmed member denial, admin access after trusted CLI promotion, and denial after demotion in the same session. Desktop denial and narrow admin layouts reviewed. | Learner final evidence/review and full CI pending. |
 
 The instructor's reference branches show possible implementations. They do not
 establish this repository's completion or the learner's own reasoning.

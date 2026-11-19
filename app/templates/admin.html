@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Administration · {{ brand.name }}{% endblock %}
+{% block content %}
+<section class="panel member-panel" aria-labelledby="admin-title">
+  <p class="eyebrow">Student Assistant</p>
+  <h1 id="admin-title">Administration</h1>
+  <p class="lede">Welcome, {{ user.username }}</p>
+  <p>You have access to the private admin area.</p>
+  <a class="button" href="/dashboard">Back to your dashboard</a>
+</section>
+{% endblock %}
